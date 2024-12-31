@@ -10,6 +10,7 @@ public class TwoPointersTests
     private readonly PalindromeValid _palindromeValid;
     private readonly LargestContainer _largestContainer;
     private readonly ShiftZerosToTheEnd _shiftZerosToTheEnd;
+    private readonly NextLexicographicalSequence _nextLexicographicalSequence;
 
     public TwoPointersTests()
     {
@@ -18,6 +19,7 @@ public class TwoPointersTests
         _palindromeValid = new PalindromeValid();
         _largestContainer = new LargestContainer();
         _shiftZerosToTheEnd = new ShiftZerosToTheEnd();
+        _nextLexicographicalSequence = new NextLexicographicalSequence();
     }
 
     [TestMethod]
@@ -139,6 +141,19 @@ public class TwoPointersTests
 
         // Assert
         Assert.AreEqual("1,3,2,0,0", string.Join(",", nums));
+    }
+
+    [TestMethod]
+    public void NextLexicographicalSequence_OptimizedTest()
+    {
+        // Arrange
+        string str = "abcd";
+
+        // Act
+        string result = _nextLexicographicalSequence.NextLexicographicalSequence_Optimized(str);
+
+        // Assert
+        Assert.AreEqual("abdc", result);
     }
 }
   
