@@ -3,10 +3,10 @@
 public class Prerequisites
 {
     /*
-        Time: O(n x L^2) since we process n words and each word has length L characters to replace
-        Space: O(n x L) for the dictionarySet
-            n = number of words in the dictionary
-            L = average length of each word
+        Time: O(v + e) since we traverse each course and each edge
+        Space: O(v + e) for the adjacency list and queue
+            v = number of courses
+            e = number of prerequisites
     */
     public bool CanEnrollInAllCourses(int n, List<List<int>> prerequisites)
     {
