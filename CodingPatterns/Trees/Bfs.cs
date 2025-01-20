@@ -5,7 +5,7 @@ namespace CodingPatterns.Trees;
 public class Bfs
 {
     /*
-        Time: O(n)  since we need to vist all nodes
+        Time: O(n)  since we need to visit all nodes
         Space: O(n) since each level can have at most n/2 nodes
             n = number of nodes in the tree
     */

@@ -5,7 +5,7 @@ namespace CodingPatterns.Trees;
 public class BinaryTreeColumns
 {
     /*
-        Time: O(n)  since we need to vist all nodes
+        Time: O(n)  since we need to visit all nodes
         Space: O(n) since the map can contain n nodes, and the queue can have at most n/2 items
             n = number of nodes in the tree
     */

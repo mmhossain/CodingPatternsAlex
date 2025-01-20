@@ -5,7 +5,7 @@ namespace CodingPatterns.Trees;
 public class Dfs
 {
     /*
-        Time: O(n)  since we need to vist all nodes
+        Time: O(n)  since we need to visit all nodes
         Space: O(n) since the recursion stack can take upto O(n)
             n = number of nodes in the tree
     */
@@ -29,7 +29,7 @@ public class Dfs
     }
 
     /*
-        Time: O(n)  since we need to vist all nodes
+        Time: O(n)  since we need to visit all nodes
         Space: O(n) since the recursion stack can take upto O(n)
             n = number of nodes in the tree
     */
@@ -53,7 +53,7 @@ public class Dfs
     }
 
     /*
-        Time: O(n)  since we need to vist all nodes
+        Time: O(n)  since we need to visit all nodes
         Space: O(n) since the recursion stack can take upto O(n)
             n = number of nodes in the tree
     */

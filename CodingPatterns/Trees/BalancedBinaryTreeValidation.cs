@@ -5,7 +5,7 @@ namespace CodingPatterns.Trees;
 public class BalancedBinaryTreeValidation
 {
     /*
-        Time: O(n)  since we need to vist all nodes
+        Time: O(n)  since we need to visit all nodes
         Space: O(n) since the recursion can go up to n
             n = number of nodes in the tree
     */

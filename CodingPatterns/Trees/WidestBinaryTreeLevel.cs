@@ -5,7 +5,7 @@ namespace CodingPatterns.Trees;
 public class WidestBinaryTreeLevel
 {
     /*
-        Time: O(n)  since we need to vist all nodes
+        Time: O(n)  since we need to visit all nodes
         Space: O(n) since the queue can have at most n/2 nodes
             n = number of nodes in the tree
     */

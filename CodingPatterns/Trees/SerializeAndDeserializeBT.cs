@@ -5,7 +5,7 @@ namespace CodingPatterns.Trees;
 public class SerializeAndDeserializeBT
 {
     /*
-        Time: O(n)  since we need to vist all nodes
+        Time: O(n)  since we need to visit all nodes
         Space: O(n) since the call stack can have n nodes
             n = number of nodes in the tree
     */
@@ -31,7 +31,7 @@ public class SerializeAndDeserializeBT
     }
 
     /*
-        Time: O(n)  since we need to vist all nodes
+        Time: O(n)  since we need to visit all nodes
         Space: O(n) since the call stack can have n nodes
             n = number of nodes in the tree
     */

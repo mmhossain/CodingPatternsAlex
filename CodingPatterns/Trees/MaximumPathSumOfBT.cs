@@ -5,7 +5,7 @@ namespace CodingPatterns.Trees;
 public class MaximumPathSumOfBT
 {
     /*
-        Time: O(n)  since we need to vist all nodes
+        Time: O(n)  since we need to visit all nodes
         Space: O(n) since the recursion stack can have up to n nodes
             n = number of nodes in the tree
     */
