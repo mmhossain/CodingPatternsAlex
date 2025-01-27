@@ -1,6 +1,5 @@
 ﻿using CodingPatterns.Trees;
 using Domain;
-using System.Diagnostics;
 
 namespace CodingPatterns.Tests;
 
