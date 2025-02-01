@@ -1,5 +1,4 @@
 ﻿using CodingPatterns.DynamicProgramming;
-using Domain;
 
 namespace CodingPatterns.Tests;
 
@@ -7,10 +6,12 @@ namespace CodingPatterns.Tests;
 public class DynamicProgrammingTests
 {
     private readonly ClimbingStairs _climbingStairs;
+    private readonly CoinCombination _coinCombination;
 
     public DynamicProgrammingTests()
     {
         _climbingStairs = new ClimbingStairs();
+        _coinCombination = new CoinCombination();
     }
 
     [TestMethod]
@@ -50,6 +51,34 @@ public class DynamicProgrammingTests
 
         // Assert
         Assert.AreEqual(5, result);
+    }
+
+    [TestMethod]
+    public void MinCoinCombination_TopDownTest()
+    {
+        // Arrange
+        List<int> coins = [1, 2, 3];
+        int target = 5;
+
+        // Act
+        int result = _coinCombination.MinCoinCombination_TopDown(coins, target);
+
+        // Assert
+        Assert.AreEqual(2, result);
+    }
+
+    [TestMethod]
+    public void MinCoinCombination_BottomUpTest()
+    {
+        // Arrange
+        List<int> coins = [1, 2, 3];
+        int target = 5;
+
+        // Act
+        int result = _coinCombination.MinCoinCombination_BottomUp(coins, target);
+
+        // Assert
+        Assert.AreEqual(2, result);
     }
 }
   
